@@ -1,0 +1,35 @@
+
+.search{font-size: 15px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.btn-login,.btn-reset{
+    padding: 6px 12px;
+    background: #2f8e86;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #2f8e86;
+}
+.btn-login:hover,.btn-reset:hover{
+    background: #fff;
+    color: #2f8e86;
+}
+.btn-reset{
+    background-color: #fdbf2d;
+    border: 1px solid #fdbf2d;
+}
+.btn-reset:hover{
+    color: #fdbf2d;
+}
+.table-size{
+    font-size: 12px;
+}
+table td{
+    text-align: left;
+}
+.bg-success th{
+    background-color: #2f8e86 !important;
+    color: #fff !important;
+    font-weight:normal;
+}
