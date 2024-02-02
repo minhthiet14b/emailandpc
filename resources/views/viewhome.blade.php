@@ -138,26 +138,12 @@
                           <td>{{ $email->name }}</td>
                           <td>{{ $email->chinese_name }}</td>
                           <td>
-                            @foreach ($deps as $dep)
-                                @if ($dep->id == $email->dep_id)
-                                    {{$dep->name}}
-                                @endif
-                            @endforeach
-                            @if($email->dep_id==0)
-                                    no
-                            @endif
+                            {{$email->deps->name}}
                           </td>
                           <td>{{ $email->email }}</td>
                           <td>{{ $email->ip }}</td>
                           <td>
-                            @foreach ($users as $user)
-                                @if ($user->id == $email->role)
-                                    {{$user->name}}
-                                @endif
-                            @endforeach
-                            @if($email->role==0)
-                                no
-                            @endif
+                            {{$email->users->email ?? 'no'}}
                           </td>
                             <td>
                                 @if ($email->skype)
