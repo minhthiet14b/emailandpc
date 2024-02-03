@@ -24,7 +24,11 @@ class ViewHomeController extends Controller
         $search = $request->search;
         $field = $request->field;
         if($field == 'name'){
-            $keysearch = ASCII::to_ascii($request->search);
+            if($request->search != null){
+                $keysearch = ASCII::to_ascii($request->search);
+            }else{
+                $keysearch = '';
+            }
         }
         else{
             $keysearch =$request->search;
